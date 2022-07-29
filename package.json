@@ -30,17 +30,16 @@
     "react-dom": "^18.2.0",
     "react-error-boundary": "^3.1.4",
     "react-router-dom": "6",
-    "react-scripts": "5.0.1",
     "react-twitter-widgets": "^1.11.0",
     "styled-components": "^5.3.5",
     "typescript": "^4.7.4",
+    "vite-plugin-svgr": "^2.2.1",
+    "vite-tsconfig-paths": "^3.5.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "vite",
+    "build": "vite build",
     "prepare": "husky install",
     "format": "yarn prettier --write ."
   },
@@ -64,9 +63,11 @@
   },
   "devDependencies": {
     "@types/debounce": "^1.2.1",
+    "@vitejs/plugin-react": "^2.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "vite": "^3.0.3"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
